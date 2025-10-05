@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px 20px;
+    color: #4a148c;
+}
+
+/* HEADING */
+h1 {
+    font-size: 2.4em;
+    text-align: center;
+    color: #6a1b9a;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-shadow: 1px 2px 4px rgba(106, 27, 154, 0.1);
+}
+
+/* PARAGRAPH */
+p {
+    font-size: 1.1em;
+    text-align: center;
+    color: #7b1fa2;
+    margin-bottom: 25px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* FORM CONTAINER */
+form {
+    background-color: #ffffff;
+    border: 2px solid #ce93d8;
+    border-radius: 20px;
+    padding: 35px 40px;
+    box-shadow: 0 6px 25px rgba(106, 27, 154, 0.15);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* LABEL */
+label {
+    display: inline-block;
+    width: 120px;
+    color: #6a1b9a;
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* INPUT */
+input[type="text"],
+input[type="email"] {
+    width: calc(100% - 130px);
+    padding: 12px;
+    border: 2px solid #ce93d8;
+    border-radius: 10px;
+    background-color: #faf5fb;
+    color: #4a148c;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: #ab47bc;
+    background-color: #ffffff;
+    box-shadow: 0 0 6px rgba(171, 71, 188, 0.3);
+}
+
+/* BUTTON */
+input[type="submit"] {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 40px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #ba68c8 0%, #8e24aa 100%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(142, 36, 170, 0.3);
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #8e24aa 0%, #6a1b9a 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(106, 27, 154, 0.4);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    form {
+        padding: 25px;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+    }
+}

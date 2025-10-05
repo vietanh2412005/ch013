@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #ffe0e9 0%, #f8bbd0 100%);
+    color: #6d1b7b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px 20px;
+}
+
+/* HEADING */
+h1 {
+    color: #ad1457;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px 2px 5px rgba(173, 20, 87, 0.15);
+}
+
+/* PARAGRAPH */
+p {
+    font-size: 1.1em;
+    text-align: center;
+    color: #880e4f;
+    margin-bottom: 25px;
+    max-width: 650px;
+    line-height: 1.6;
+}
+
+/* INFO BOX */
+.info-section {
+    background: #fffafc;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(173, 20, 87, 0.15);
+    max-width: 500px;
+    width: 100%;
+    margin-top: 30px;
+    border: 2px solid #f48fb1;
+}
+
+/* LABELS */
+.info-section label {
+    display: inline-block;
+    width: 120px;
+    color: #ad1457;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+.info-section span {
+    color: #6a1b9a;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+br {
+    margin-bottom: 5px;
+}
+
+/* BUTTON */
+input[type="submit"] {
+    background: linear-gradient(135deg, #f06292 0%, #e91e63 100%);
+    color: white;
+    padding: 14px 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+    margin-top: 30px;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(233, 30, 99, 0.4);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .info-section {
+        padding: 25px;
+    }
+
+    .info-section label {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 14px 20px;
+    }
+}
